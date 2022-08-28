@@ -1,0 +1,62 @@
+issuer registers
+selects issuer type
+adds registration details (address, registration no, year)
+issuer should have at at least 2 authorizers. They can be no more than 4.
+Add their details
+Add their public address
+add logo
+add issuer data source 
+specify the type of database and any credentials required to connect
+
+certification template
+if university;
+student public address;
+course level;
+Student number;
+student name;
+student address;
+course;
+level;
+certifate awarded;
+date awarded;
+image of certificate
+edit details
+generate smart contract based on the certifate template for the student
+
+
+Verifiable proof -> Verifiable Proof -> Verifiable Proof
+Root -> Merkle
+
+Applicant request from Institution a
+A adds proofHash
+B adds proofHash
+Institution A -> Institution A -> Institution C
+
+
+issuance:
+requires at least 2 approvals from the university or issuer if there are more than 1 people. Could be delegated
+issued date and time
+student or customer public address
+verified true or false
+
+
+Customer or student:
+enter as a student or customer via the portal
+requires connection to an ethereum wallet
+view awarded certificates and credentials
+authorize access to different people
+revoke access
+
+
+
+for employers or enterprises:
+enter as a verifier
+requires connection to an ethereum wallet
+request access from student or customer for verification
+once granted, verify the authenticity of the certificates or credentials
+Could be qr code verification of typed
+
+
+
+Performance metrics
+

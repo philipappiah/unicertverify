@@ -1,0 +1,674 @@
+
+
+
+
+/** forms **/
+
+
+
+
+
+p {
+  color: grey
+}
+
+#heading {
+  text-transform: uppercase;
+  color: #005086;
+  font-weight: normal
+}
+
+#stepform {
+  text-align: center;
+  position: relative;
+  margin-top: 20px
+}
+
+#stepform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative
+}
+
+.step {
+  text-align: left
+}
+
+#stepform fieldset:not(:first-of-type) {
+  display: none
+}
+
+#stepform input,
+#stepform textarea, #stepform select{
+  padding: 8px 15px 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  background-color: #ECEFF1;
+  font-size: 16px;
+  letter-spacing: 1px
+}
+
+#stepform input:focus,
+#stepform textarea:focus, #stepform select:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #005086;
+  outline-width: 0
+}
+
+#stepform .next-button {
+  width: 100px;
+  background: #005086;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 0px 10px 5px;
+  float: right
+}
+
+#stepform .next-button:hover,
+#stepform .next-button:focus {
+  background-color: #311B92
+}
+
+#stepform .previous-button {
+  width: 100px;
+  background: #616161;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right
+}
+
+#stepform .previous-button:hover,
+#stepform .previous-button:focus {
+  background-color: #000000
+}
+
+.card {
+  z-index: 0;
+  border: none;
+  position: relative
+}
+
+.fs-title {
+  font-size: 25px;
+  color: #005086;
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-align: left
+}
+
+.purple-text {
+  color: #005086;
+  font-weight: normal
+}
+
+.steps {
+  font-size: 25px;
+  color: gray;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-align: right
+}
+
+.fieldlabels {
+  color: gray;
+  text-align: left
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey
+}
+
+#progressbar .active {
+  color: #005086
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400
+}
+
+#progressbar #account:before {
+  font-family: FontAwesome;
+  content: "\f13e"
+}
+
+#progressbar #personal:before {
+  font-family: FontAwesome;
+  content: "\f007"
+}
+
+#progressbar #payment:before {
+  font-family: FontAwesome;
+  content: "\f030"
+}
+
+#progressbar #confirm:before {
+  font-family: FontAwesome;
+  content: "\f00c"
+}
+
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px
+}
+
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #005086
+}
+
+.progress {
+  height: 20px;
+  background-color: #005086
+}
+
+.progress-bar {
+  background-color: #005086
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover
+}
+
+
+/** **/
+.spinner {
+  position: absolute;
+  right:80px;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.spinner:after {
+  content: " ";
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #005086;
+  border-color: #005086 transparent #005086 transparent;
+  animation: spinner 1.2s linear infinite;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.status-spinner {
+  position: absolute;
+  right:80px;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.status-spinner:after {
+  content: " ";
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #F933FF;
+  border-color: #F933FF transparent #F933FF transparent;
+  animation: status-spinner 1.2s linear infinite;
+}
+@keyframes status-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+/**  **/
+
+
+
+.notificationlist {
+  width: 300px;
+  background: #2C3E50;
+  box-shadow: 0 3px 6px rgba(black,0.16), 0 3px 6px rgba(black,0.23);
+  border-top: 10px solid #2C3E50;
+}
+
+.notificationlist-head p{
+  padding: 5px 20px;
+  margin: 10px;
+  color: #0B5AA2;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.notificationlist-head hr {
+  width: 20%;
+  margin: 0px 30px;
+  border: 1px solid #2C3E50;
+}
+
+.notificationlist-body {
+  padding: 10px;
+  margin: 10px;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.notificationlist-body-content {
+  padding: 10px;
+  padding-right: 0px;
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+ 
+  font-size: 13px;
+  grid-gap: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  
+}
+
+.notificationlist-body-content:hover {
+  border-radius: 15px;
+  border: 1px solid #2C3E50;
+}
+
+.notificationlist-body-content i {
+  align-self: center;
+  font-size: 15px;
+  color: #ECEFF1;
+  font-weight: bold;
+  animation: icon 1.5s infinite forwards;
+}
+
+@keyframes icon {
+  0%,100%{
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(3px);
+  }
+}
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+html {
+  height: 100%
+}
+
+p {
+  color: grey
+}
+
+#heading {
+  text-transform: uppercase;
+  color: #005086;
+  font-weight: normal
+}
+
+#stepform {
+  text-align: center;
+  position: relative;
+  margin-top: 20px
+}
+
+#stepform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative
+}
+
+.step {
+  text-align: left
+}
+
+#stepform fieldset:not(:first-of-type) {
+  display: none
+}
+
+#stepform input,
+#stepform textarea, #stepform select{
+  padding: 8px 15px 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  background-color: #ECEFF1;
+  font-size: 16px;
+  letter-spacing: 1px
+}
+
+#stepform input:focus,
+#stepform textarea:focus, #stepform select:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #005086;
+  outline-width: 0
+}
+
+.next-button{
+  width: 100px;
+  background: #005086;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 0px 10px 5px;
+  float: right
+
+}
+
+#stepform .next-button {
+  width: 100px;
+  background: #005086;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 0px 10px 5px;
+  float: right
+}
+
+#stepform .next-button:hover,
+#stepform .next-button:focus {
+  background-color: #311B92
+}
+
+
+
+.previous-button {
+  width: 100px;
+  background: #616161;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right
+}
+
+#stepform .previous-button:hover,
+#stepform .previous-button:focus {
+  background-color: #000000
+}
+
+.card {
+  z-index: 0;
+  border: none;
+  position: relative
+}
+
+.fs-title {
+  font-size: 25px;
+  color: #005086;
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-align: left
+}
+
+.purple-text {
+  color: #005086;
+  font-weight: normal
+}
+
+.steps {
+  font-size: 25px;
+  color: gray;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-align: right
+}
+
+.fieldlabels {
+  color: gray;
+  text-align: left
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey
+}
+
+#progressbar .active {
+  color: #005086
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400
+}
+
+#progressbar #account:before {
+  font-family: FontAwesome;
+  content: "\f13e"
+}
+
+#progressbar #personal:before {
+  font-family: FontAwesome;
+  content: "\f007"
+}
+
+#progressbar #payment:before {
+  font-family: FontAwesome;
+  content: "\f030"
+}
+
+#progressbar #confirm:before {
+  font-family: FontAwesome;
+  content: "\f00c"
+}
+
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px
+}
+
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #005086
+}
+
+.progress {
+  height: 20px;
+  background-color: #005086
+}
+
+.progress-bar {
+  background-color: #005086
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover
+}
+
+
+
+
+
+
+
+
+
+
+#progressbar2 {
+  position: absolute;
+  left: 35px;
+  overflow: hidden;
+  margin-top: 25px;
+  color: #198754
+}
+
+#progressbar2 li {
+  list-style-type: none;
+  font-size: 8px;
+  font-weight: 400;
+  margin-bottom: 150px
+}
+
+
+#progressbar2 .step0:before {
+  content: "";
+  color: #fff
+}
+
+#progressbar2 li:before {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  font-size: 20px;
+  background: #fff;
+  border: 2px solid #198754;
+  border-radius: 50%;
+  margin: auto
+}
+
+#progressbar2 li:last-child:before {
+  width: 40px;
+  height: 40px
+}
+
+#progressbar2 li:after {
+  content: '';
+  width: 3px;
+  height: 100%;
+  background: #BDBDBD;
+  position: absolute;
+  
+  top: 15px;
+  z-index: -1
+}
+
+#progressbar2 li:last-child:after {
+  top: 147px;
+  height: 132px
+}
+
+#progressbar2 li:nth-child(3):after {
+  top: 81px
+}
+
+#progressbar2 li:nth-child(2):after {
+  top: 0px
+}
+
+#progressbar2 li:first-child:after {
+  position: absolute;
+  top: -81px
+}
+
+#progressbar2 li.active:after {
+  background: #198754
+}
+
+#progressbar2 li.active:before {
+  background: 	#198754;
+  font-family: FontAwesome;
+  content: "\f00c"
+}
