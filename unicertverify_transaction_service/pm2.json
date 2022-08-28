@@ -1,0 +1,11 @@
+{
+    "apps": [
+        {
+            "name": "unicert_tx_service",
+            "script": "./src/server.ts",
+            "watch": ["./src"],
+            "instances": 0,
+            "exec_mode": "cluster"
+        }
+    ]
+}
